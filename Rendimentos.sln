@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendimentos.Api", "Rendimentos.Api\Rendimentos.Api.csproj", "{4922B933-C0F1-4D17-B412-92BED090CECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendimentos.Aspire.AppHost", "Rendimentos.Aspire\Rendimentos.Aspire.AppHost\Rendimentos.Aspire.AppHost.csproj", "{3E44E5DD-36B2-429E-A071-5897C00004BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendimentos.Aspire.ServiceDefaults", "Rendimentos.Aspire\Rendimentos.Aspire.ServiceDefaults\Rendimentos.Aspire.ServiceDefaults.csproj", "{BDB7E0DA-D4F2-499B-B8FB-4FF890808561}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Rendimentos.Angular", "Rendimentos.Angular\", "{E6507E24-6026-48B7-B3DC-BC527D654FDE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63307"
+		Debug.AspNetCompiler.PhysicalPath = "Rendimentos.Angular\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63307\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63307"
+		Release.AspNetCompiler.PhysicalPath = "Rendimentos.Angular\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63307\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63307"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rendimentos.Test", "Rendimentos.Test\Rendimentos.Test.csproj", "{46CEC9A8-BC3B-4903-9F14-E8BC459DF2C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4922B933-C0F1-4D17-B412-92BED090CECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4922B933-C0F1-4D17-B412-92BED090CECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4922B933-C0F1-4D17-B412-92BED090CECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4922B933-C0F1-4D17-B412-92BED090CECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E44E5DD-36B2-429E-A071-5897C00004BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E44E5DD-36B2-429E-A071-5897C00004BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E44E5DD-36B2-429E-A071-5897C00004BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E44E5DD-36B2-429E-A071-5897C00004BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB7E0DA-D4F2-499B-B8FB-4FF890808561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB7E0DA-D4F2-499B-B8FB-4FF890808561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB7E0DA-D4F2-499B-B8FB-4FF890808561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB7E0DA-D4F2-499B-B8FB-4FF890808561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6507E24-6026-48B7-B3DC-BC527D654FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6507E24-6026-48B7-B3DC-BC527D654FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6507E24-6026-48B7-B3DC-BC527D654FDE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6507E24-6026-48B7-B3DC-BC527D654FDE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{46CEC9A8-BC3B-4903-9F14-E8BC459DF2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CEC9A8-BC3B-4903-9F14-E8BC459DF2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CEC9A8-BC3B-4903-9F14-E8BC459DF2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CEC9A8-BC3B-4903-9F14-E8BC459DF2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E2E977E-C45C-401B-AD0F-6CC05FE05574}
+	EndGlobalSection
+EndGlobal

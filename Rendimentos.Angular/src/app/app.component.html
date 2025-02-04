@@ -1,0 +1,52 @@
+<h1 class="text-center font-semibold text-stone-200 text-4xl">
+  Calcular Rendimentos
+</h1>
+<form
+  [formGroup]="form"
+  (submit)="calcular()"
+  class="flex flex-col w-2xl gap-8 p-8 border-stone-400 border-2 rounded-2xl"
+>
+  <div class="flex flex-row gap-4 *:grow">
+    <div class="flex flex-col gap-2">
+      <label class="font-semibold text-stone-100 text-lg px-2">Valor</label>
+      <input
+        type="text"
+        [formControl]="form.controls.valor"
+        class="bg-stone-200 outline-2 outline-stone-400 rounded text-xl font-semibold p-2 text-right focus:outline-teal-600 transition-all duration-150"
+        mask="separator.2"
+        prefix="R$ "
+      />
+    </div>
+    <div class="flex flex-col gap-2">
+      <label class="font-semibold text-stone-100 text-lg px-2">Meses</label>
+      <input
+        type="text"
+        [formControl]="form.controls.meses"
+        class="bg-stone-200 outline-2 outline-stone-400 rounded text-xl font-semibold p-2 text-right focus:outline-teal-600 transition-all duration-150"
+        mask="separator.0"
+      />
+    </div>
+  </div>
+  <button
+    class="bg-teal-800 text-stone-200 font-semibold text-2xl p-4 rounded hover:bg-teal-600 active:bg-teal-900 active:text-stone-400 active:translate-0.5 transition-all duration-150"
+    type="submit"
+  >
+    Calcular
+  </button>
+</form>
+@if(rendimento()){
+<div
+  class="grid grid-cols-2 gap-2 w-2xl p-8 border-stone-400 border-2 rounded-2xl text-stone-100 font-semibold text-2xl text-right"
+>
+  <label class="text-right">Total Bruto</label>
+  <div>{{rendimento()!.totalBruto | mask: 'separator.2' : { prefix: 'R$ '} }}</div>
+  <label class="text-right">Rendimento Bruto</label>
+  <div>{{rendimento()!.rendimentoBruto | mask: 'separator.2' : { prefix: 'R$ '} }}</div>
+  <label class="text-right">Deduções (Impostos)</label>
+  <div>{{rendimento()!.deducoes | mask: 'separator.2' : { prefix: 'R$ '} }}</div>
+  <label class="text-right">Total Líquido</label>
+  <div>{{rendimento()!.totalLiquido | mask: 'separator.2' : { prefix: 'R$ '} }}</div>
+  <label class="text-right">Rendimento Líquido</label>
+  <div>{{rendimento()!.rendimentoLiquido | mask: 'separator.2' : { prefix: 'R$ '} }}</div>
+</div>
+}
